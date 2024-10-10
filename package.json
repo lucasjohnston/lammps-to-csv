@@ -1,0 +1,18 @@
+{
+  "name": "lamps-dumps-to-csv",
+  "version": "1.0.0",
+  "description": "A CLI tool to convert LAMPS dumps files to a CSV.",
+  "type": "module",
+  "main": "main.js",
+  "bin": {
+    "lucashelpme": "main.js"
+  },
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "ora": "^8.1.0"
+  },
+  "author": "Lucas Johnston <developing@lucasco.de>",
+  "license": "MIT"
+}
