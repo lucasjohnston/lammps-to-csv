@@ -1,6 +1,7 @@
 # 🌟 LAMMPS dump to CSV tool
 
 A **CLI tool** to convert your LAMMPS dump files into **easy-to-read CSV** files. Simplify your data processing workflow with just a single command!
+[![npm version](https://img.shields.io/npm/v/lammps-to-csv)](https://www.npmjs.com/package/lammps-to-csv)
 
 ## 🚀 Installation
 
