@@ -1,4 +1,4 @@
-# 🌟 LAMMPs dump to CSV tool
+# 🌟 LAMMPS dump to CSV tool
 
 A **CLI tool** to convert your LAMMPS dump files into **easy-to-read CSV** files. Simplify your data processing workflow with just a single command!
 
@@ -15,6 +15,9 @@ npm install -g lammps-to-csv
 Use the `lammps-to-csv` command followed by the path to your LAMPS dump file:
 
 ```bash
+lammps-to-csv path/to/input.dump
+```
+```bash
 lammps-to-csv path/to/input.txt
 ```
 
@@ -23,13 +26,13 @@ This will generate a `input.csv` file in the same directory.
 ## 📖 Example
 
 ```bash
-lammps-to-csv ./data/dump.txt
+lammps-to-csv ./data/projections.dump
 ```
 
 **Output:**
 
 ```bash
-💾 File has been saved to ./data/dump.csv
+💾 File has been saved to ./data/projections.csv
 ```
 
 ## 🎉 Features
