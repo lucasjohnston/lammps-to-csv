@@ -1,21 +1,21 @@
-# 🌟 Lamps Dumps to CSV
+# 🌟 LAMMPs dump to CSV tool
 
-A **CLI tool** to convert your LAMPS dumps files into **easy-to-read CSV** files. Simplify your data processing workflow with just a single command!
+A **CLI tool** to convert your LAMMPS dump files into **easy-to-read CSV** files. Simplify your data processing workflow with just a single command!
 
 ## 🚀 Installation
 
 Ensure you have [Node.js](https://nodejs.org/) installed. Then, install the CLI tool globally using npm:
 
 ```bash
-npm install -g lamps-dumps-to-csv
+npm install -g lammps-to-csv
 ```
 
 ## 🛠️ Usage
 
-Use the `convert-lamps` command followed by the path to your LAMPS dump file:
+Use the `lammps-to-csv` command followed by the path to your LAMPS dump file:
 
 ```bash
-convert-lamps path/to/input.txt
+lammps-to-csv path/to/input.txt
 ```
 
 This will generate a `input.csv` file in the same directory.
@@ -23,7 +23,7 @@ This will generate a `input.csv` file in the same directory.
 ## 📖 Example
 
 ```bash
-convert-lamps ./data/dump.txt
+lammps-to-csv ./data/dump.txt
 ```
 
 **Output:**
@@ -34,7 +34,7 @@ convert-lamps ./data/dump.txt
 
 ## 🎉 Features
 
-- **Fast Conversion:** Quickly transform large LAMPS dump files to CSV.
+- **Fast Conversion:** Quickly transform large LAMMPS dump files to CSV.
 - **User-Friendly:** Intuitive CLI with helpful spinner indicators.
 - **Error Handling:** Provides clear error messages for smooth troubleshooting.
 
@@ -44,4 +44,4 @@ MIT © Lucas Johnston
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request on [GitHub](https://github.com/lucasjohnston/lamps-dumps-to-csv).
+Contributions are welcome! Please open an issue or submit a pull request on [GitHub](https://github.com/lucasjohnston/lammps-to-csv).

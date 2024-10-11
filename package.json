@@ -1,15 +1,15 @@
 {
-  "name": "lamps-dumps-to-csv",
+  "name": "lammps-to-csv",
   "version": "1.0.0",
-  "description": "A CLI tool to convert LAMPS dumps files to a CSV.",
+  "description": "A CLI tool to convert LAMMPS dump files to a CSV.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lucasjohnston/lamps-dumps-to-csv"
+    "url": "https://github.com/lucasjohnston/lammps-to-csv"
   },
   "type": "module",
   "main": "main.js",
   "bin": {
-    "convert-lamps": "main.js"
+    "lammps-to-csv": "main.js"
   },
   "scripts": {
     "start": "node main.js"

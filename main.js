@@ -10,7 +10,7 @@ if (args.length === 0) {
 }
 
 const inputFilePath = args[0];
-const outputFilePath = inputFilePath.replace(".txt", ".csv");
+const outputFilePath = inputFilePath.replace(/\.(txt|dump)$/, ".csv");
 
 fs.readFile(inputFilePath, "utf8", (err, data) => {
   console.log(
@@ -37,7 +37,6 @@ fs.readFile(inputFilePath, "utf8", (err, data) => {
     if (currentRow.trim() === "") {
       continue;
     }
-
     if (
       currentRow.includes(
         "ITEM: ATOMS id type x y z vx vy vz angmomx angmomy angmomz c_1[1] c_1[2] c_1[3] c_1[4] c_orient[1] c_orient[2] c_orient[3] c_orient[4]"
@@ -45,11 +44,9 @@ fs.readFile(inputFilePath, "utf8", (err, data) => {
     ) {
       // Skip the previous line by not adding it to filteredRows
       if (previousRow !== null) {
-        // Remove the last added row if it exists
         filteredRows.pop();
       }
-      // Add the current row without skipping
-      filteredRows.push(currentRow);
+
       previousRow = currentRow;
       continue;
     }

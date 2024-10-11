@@ -1,5 +1,6 @@
 *.csv
 *.txt
+*.dump
 .DS_Store
 .env
 .vscode
